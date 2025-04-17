@@ -19,47 +19,63 @@
         <!-- nav header -->
         <nav class="main-nav">
             <a href="#home-section">Home</a>
-            <a href="#our-profile-section">Our profile</a>
-            <a href="#portofolio-section">Portofolio</a>
+            <a href="#my-profile-section">My profile</a>
+            <!-- <a href="#portofolio-section">Portofolio</a> -->
             <a href="#message-us-section">Message Us</a>
         </nav>
         
     </header>
 
-    <hr>
-
-     <!-- main content -->
-    <main>
+    <!-- main content -->
+    <main class="main-container">
 
         <!-- Home Section -->
         <section id="home-section">
 
             <header>
-                <h3>Hi .., Welcome to my website</h3>
+                <h3>Hello <span id="welcomeUser"></span>, Welcome to my website</h3>
+                <h5></h5>
             </header>
 
             <!-- banner image -->
-            <div class="banner-image"></div>
+            <div class="banner-image banner-img-1"></div>
+            <div class="banner-image banner-img-2"></div>
+            <div class="banner-image banner-img-3"></div>
+
 
             <!-- banner text -->
             <article class="section-content">
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Saya seorang Web Developer pemula yang ingin membuat sebuah website</p>
             </article>
 
         </section>
 
         <hr>
 
-        <!-- Our Profile Section -->
-        <section id="our-profile-section">
+        <!-- My Profile Section -->
+        <section id="my-profile-section">
 
             <header>
-                <h3>Our Profile</h3>
+                <h3>My Profile</h3>
             </header>
 
             <!-- profile image -->
-            <div class="p-image1"></div>
-            <div class="p-image2"></div>
+            <div class="profile-card">
+
+                <div class="p-image-bg">
+                    <div class="p-image1"></div>
+                </div>
+
+                <div class="p-data">
+                    <p><B>Muhammad Sofiantono</B></p>
+                    <p>Saya seorang Mahasiswa dari kampus <b>Politeknik Amamapare Timika</b> prodi Teknologi Rekayasa Internet yang ingin menjadi Web Developer</p>
+                </div>
+
+                <div class="p-sosmed">
+                    <a href="https://www.instagram.com/fian1105?igsh=YmlnZW80c3ptZmRy" target="_blank" title="instagram"><div class="sosmed-image instagram"></div></a>
+                    <a href="https://www.facebook.com/share/15ASGzPhPy/" target="_blank" title="Facebook"><div class="sosmed-image facebook"></div></a>
+                </div>
+            </div>
             
         </section>
 
@@ -77,50 +93,50 @@
                 <h3>Message Us</h3>
             </header>
 
-            <div>
-                <form action="" id="fconditional">
-                    <!-- nama -->
-                    <label for="nama">Nama :</label>
-                    <input type="text" name="nama" id="nama" placeholder="Nama" required>
-                    <br>
-    
-                    <!-- tanggal lahir -->
-                    <label for="tlahir">Tanggal Lahir :</label>
-                    <input type="date" name="tlahir" id="tlahir" required>
-                    <br>
-    
-                    <!-- jenis kelamin -->
-                    <label>Jenis Kelamin :</label>
-                    <br>
-                    <input type="radio" name="jkelamin" id="laki" value="Laki-laki" required>
-                    <label for="laki">Laki-laki </label>
-                    <br>
-                    <input type="radio" name="jkelamin" id="perempuan" value="Perempuan" required>
-                    <label for="perempuan">Perempuan </label>
-                    <br>
-    
-                    <!-- pesan -->
-                    <label for="pesan">Pesan :</label>
-                    <textarea name="pesan" id="pesan"></textarea>
-                    <br>
-    
-                    <!-- submit -->
-                    <input type="submit" value="Kirim">
+            <div class="form-container">
+                <form action="" name="message-form" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <label for="full-name">Name :</label>
+                        <input class="label-block" type="text" name="full-name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="birth-date">Birth Date :</label>
+                        <input class="label-block" type="date" name="birth-date" placeholder="tanggal lahir Anda">
+                    </div>
+                    <div class="form-group">
+                        <label>Gender :</label><br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="label-block" for="messages">Message :</label>
+                        <textarea name="messages" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="submit">
+                    </div>
                 </form>
+                <div class="result-container">
+                    <div class="result-bg">
+                        <p>Your Name : <span id="sender-full-name"></span></p>
+                        <p>Birth Date : <span id="sender-birth-date"></span></p>
+                        <p>Gender : <span id="sender-gender"></span></p>
+                        <p>Message : <span id="sender-messages"></span></p>
+                    </div>
+                </div>
             </div>
 
-            <div id="result"></div>
         </section>
     </main>
-
-    <hr>
 
     <!-- footer content -->
     <footer>
         <span><a href="">Made by Sofian &copy; 2025</a></span>
     </footer>
 
-    <script src="/js/script.js" defer>
+    <script src="/js/script.js">
 
     </script>
 </body>

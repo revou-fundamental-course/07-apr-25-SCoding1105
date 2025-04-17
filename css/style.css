@@ -4,19 +4,21 @@ body {
     box-sizing: border-box;
 }
 
+/* header css */
 .main-header {
     display: flex;
     justify-content: space-between;
+    background-color: crimson;
+    padding: 20px;
 }
 
 .main-image {
-    border: 1px solid;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    background-image: url(/image/profil.jpg);
+    background-image: url(/assets/profile-image.jpeg);
     background-position: center;
-    background-size: contain;
+    background-size: 110px;
 }
 
 .main-nav {
@@ -26,63 +28,194 @@ body {
 
 .main-nav > a {
     text-decoration: none;
-    color: black;
-    border: 1px solid;
+    color: white;
     padding: 8px;
+    margin-right: 20px;
+    font-weight: bold;
 }
 
+/* main css */
+.main-container {
+    background-color: blanchedalmond;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+}
+
+main > section > header {
+    text-align: center;
+}
+#home-section > header {
+    padding: 10px;
+}
+
+/* Banner Image */
 .banner-image {
     border: 1px solid;
     height: 550px;
-    background-image: url(/image/banner.jpg);
     background-size: cover;
     background-position: center;
+    border-radius: 10px;
+}
+.banner-img-1{
+    background-image: url(/assets/banner1.jpg);
+}
+.banner-img-2{
+    background-image: url(/assets/Banner2.jpg);
+}
+.banner-img-3{
+    background-image: url(/assets/banner3.jpg);
+
 }
 
-/* #our-profile-section {
+/* #my-profile-section {
 } */
+#my-profile-section {
+    justify-items: center;
+    padding-bottom: 15px;
+}
 
-#our-profile-section > div {
-    display: inline-block;
-    margin: 0 10px;
+.profile-card {
+    width: 500px;
     border: 1px solid;
+    text-align: -webkit-center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.p-image-bg{
+    background-color: crimson;
+    border-radius: 10px;
+    padding: 10px;
+}
+.p-image1 {
+    background-image: url(/assets/profile1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-color: crimson;
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
 
-.p-image {
-    background-image: url();
+/* .p-data {
+
+} */
+
+.p-sosmed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.sosmed-image {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 5px 0 5px;
+}
+
+.instagram {
+    background-image: url(/assets/instagram.jpg);
+}
+
+.facebook {
+    background-image: url(/assets/facebook.jpg);
+    border-radius: 5px;
 }
 
 .section-content {
     text-align: center;
 }
 
-#message-us-section > div {
-    display: inline-block;
+/* form css */
+.form-container {
+    display: flex;
+    flex-direction: row;
+}
+
+form {
     flex: 1;
+    padding-right: 20px;
 }
 
-#result {
-    margin: 10px;
+.form-group {
+    padding-bottom: 5px;
+}
+
+/* .label-block{
+    display: block;
+} */
+
+input[type="text"],
+input[type="date"],
+input[type="submit"],
+textarea {
+    width: 100%;
+}
+
+.result-container {
+    flex: 1;
+    background-color: whitesmoke;
     padding: 10px;
+    border-radius: 5px;
     border: 1px solid;
-    height: 250px;
 }
 
+.result-bg{
+    background-color: white;
+    padding: 10px;
+    height: 200px;
+}
+
+/* footer css */
 footer {
     text-align: end;
-    padding: 10px;
+    background-color: crimson;
+    padding: 20px;
     padding-right: 10px;
 }
 
 footer > span > a {
     text-decoration: none;
-    color: black;
+    color: white;
     transition: 1s;
 }
 
 footer > span > a:hover{
-    color: crimson;
+    color: mediumblue;
+}
+
+@media only screen and (max-width: 480px) {
+    .main-header {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-nav {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .banner-image {
+        border: 1px solid;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .profile-card {
+        width: 300px;
+        border: 1px solid;
+        text-align: -webkit-center;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .form-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
