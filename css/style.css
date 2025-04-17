@@ -16,7 +16,7 @@ body {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    background-image: url(/assets/profile-image.jpeg);
+    background-image: url(\assets\profile-image.jpeg);
     background-position: center;
     background-size: 110px;
 }
@@ -58,13 +58,13 @@ main > section > header {
     border-radius: 10px;
 }
 .banner-img-1{
-    background-image: url(/assets/banner1.jpg);
+    background-image: url(\assets\banner1.jpg);
 }
 .banner-img-2{
-    background-image: url(/assets/Banner2.jpg);
+    background-image: url(\assets\Banner2.jpg);
 }
 .banner-img-3{
-    background-image: url(/assets/banner3.jpg);
+    background-image: url(\assets\banner3.jpg);
 
 }
 
@@ -90,7 +90,7 @@ main > section > header {
     padding: 10px;
 }
 .p-image1 {
-    background-image: url(/assets/profile1.jpeg);
+    background-image: url(\assets\profile1.jpeg);
     background-size: cover;
     background-position: center;
     background-color: crimson;
@@ -119,11 +119,11 @@ main > section > header {
 }
 
 .instagram {
-    background-image: url(/assets/instagram.jpg);
+    background-image: url(\assets\instagram.jpg);
 }
 
 .facebook {
-    background-image: url(/assets/facebook.jpg);
+    background-image: url(\assets\facebook.jpg);
     border-radius: 5px;
 }
 
