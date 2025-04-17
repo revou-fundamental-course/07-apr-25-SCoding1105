@@ -5,8 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Company</title>
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
+    <!-- header content -->
+    <header class="main-header">
+
+        <!-- gambar header -->
+        <div class="main-image"></div>
+
+        <!-- <img src="image/profil.jpg" alt=""> -->
+
+        <!-- nav header -->
+        <nav class="main-nav">
+            <a href="#home-section">Home</a>
+            <a href="#our-profile-section">Our profile</a>
+            <a href="#portofolio-section">Portofolio</a>
+            <a href="#message-us-section">Message Us</a>
+        </nav>
+        
+    </header>
+
+    <hr>
+
+     <!-- main content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home-section">
+
+            <header>
+                <h3>Hi .., Welcome to my website</h3>
+            </header>
+
+            <!-- banner image -->
+            <div class="banner-image"></div>
+
+            <!-- banner text -->
+            <article class="section-content">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </article>
+
+        </section>
+
+        <hr>
+
+        <!-- Our Profile Section -->
+        <section id="our-profile-section">
+
+            <header>
+                <h3>Our Profile</h3>
+            </header>
+
+            <!-- profile image -->
+            <div class="p-image1"></div>
+            <div class="p-image2"></div>
+            
+        </section>
+
+
+        <hr>
+
+        <!-- Home Section
+        <section id="portofolio-section"></section>
+
+        <hr> -->
+
+        <!-- Message section -->
+        <section id="message-us-section">
+            <header>
+                <h3>Message Us</h3>
+            </header>
+
+            <div>
+                <form action="" id="fconditional">
+                    <!-- nama -->
+                    <label for="nama">Nama :</label>
+                    <input type="text" name="nama" id="nama" placeholder="Nama" required>
+                    <br>
     
+                    <!-- tanggal lahir -->
+                    <label for="tlahir">Tanggal Lahir :</label>
+                    <input type="date" name="tlahir" id="tlahir" required>
+                    <br>
+    
+                    <!-- jenis kelamin -->
+                    <label>Jenis Kelamin :</label>
+                    <br>
+                    <input type="radio" name="jkelamin" id="laki" value="Laki-laki" required>
+                    <label for="laki">Laki-laki </label>
+                    <br>
+                    <input type="radio" name="jkelamin" id="perempuan" value="Perempuan" required>
+                    <label for="perempuan">Perempuan </label>
+                    <br>
+    
+                    <!-- pesan -->
+                    <label for="pesan">Pesan :</label>
+                    <textarea name="pesan" id="pesan"></textarea>
+                    <br>
+    
+                    <!-- submit -->
+                    <input type="submit" value="Kirim">
+                </form>
+            </div>
+
+            <div id="result"></div>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- footer content -->
+    <footer>
+        <span><a href="">Made by Sofian &copy; 2025</a></span>
+    </footer>
+
+    <script src="/js/script.js" defer>
+
+    </script>
 </body>
 </html>

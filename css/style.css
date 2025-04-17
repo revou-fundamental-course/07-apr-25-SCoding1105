@@ -1,0 +1,88 @@
+body {
+    font-family: arial, sans-serif;
+    background-color: lavender;
+    box-sizing: border-box;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-image {
+    border: 1px solid;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url(/image/profil.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav > a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid;
+    padding: 8px;
+}
+
+.banner-image {
+    border: 1px solid;
+    height: 550px;
+    background-image: url(/image/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* #our-profile-section {
+} */
+
+#our-profile-section > div {
+    display: inline-block;
+    margin: 0 10px;
+    border: 1px solid;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.p-image {
+    background-image: url();
+}
+
+.section-content {
+    text-align: center;
+}
+
+#message-us-section > div {
+    display: inline-block;
+    flex: 1;
+}
+
+#result {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid;
+    height: 250px;
+}
+
+footer {
+    text-align: end;
+    padding: 10px;
+    padding-right: 10px;
+}
+
+footer > span > a {
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+}
+
+footer > span > a:hover{
+    color: crimson;
+}
